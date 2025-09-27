@@ -1,4 +1,6 @@
-﻿# deps
+﻿# .gitignore
+$gitignore = @"
+# deps
 node_modules/
 .pnpm-store/
 .pnp
@@ -22,3 +24,27 @@ coverage/
 npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
+"@
+Set-Content -Path .gitignore -Value $gitignore -Encoding UTF8
+
+# .gitattributes
+$gitattributes = @"
+* text=auto eol=lf
+
+# scripts do Windows (mantém CRLF)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# binários
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+"@
+Set-Content -Path .gitattributes -Value $gitattributes -Encoding UTF8
