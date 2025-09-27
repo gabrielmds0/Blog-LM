@@ -1,7 +1,6 @@
 import React from 'react';
 import FeaturedPostCard from './FeaturedPostCard';
-import TopicSearch from './TopicSearch';
-import TaxonomyGrid from './TaxonomyGrid';
+import CombinedTopicsSection from './CombinedTopicsSection';
 import ProceduresGrid from './ProceduresGrid';
 import TextBlock from './TextBlock';
 import NewsletterBadge from './NewsletterBadge';
@@ -25,47 +24,19 @@ const MainLayout = () => {
                 readTime="Em 1 minuto"
               />
             </section>
-
-            {/* Busca por tópicos */}
-            <section>
-              <TopicSearch />
-            </section>
-
-            {/* Grid de grandes temas */}
-            <section>
-              <TaxonomyGrid />
-            </section>
+             {/* Seção horizontal compartilhada - Grandes Temas + Tópicos A-Z */}
+        <CombinedTopicsSection />
 
             {/* Grid de procedimentos */}
             <section>
               <ProceduresGrid />
             </section>
 
-            {/* Bloco promocional */}
-            <section>
-              <PromoBlock />
-            </section>
-          </div>
-
-          {/* Coluna direita - Sidebar */}
-          <div className="lg:col-span-4 space-y-6">
             
-            {/* Badge de newsletter */}
-            <section>
-              <NewsletterBadge />
-            </section>
-
-            {/* Mais clicados */}
-            <section>
-              <MostClicked />
-            </section>
-
-            {/* Bloco WhatsApp */}
-            <section>
-              <TextBlock />
-            </section>
           </div>
+
         </div>
+
       </main>
     </div>
   );

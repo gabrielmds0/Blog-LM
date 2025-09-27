@@ -13,7 +13,7 @@ function App() {
   const renderHomePage = () => (
     <div className="min-h-screen bg-gray-50">
       <Header />
-      <PageTitle title="Conteúdo Médico" />
+      
       <MainLayout />
       
       {/* Navigation to Article */}
