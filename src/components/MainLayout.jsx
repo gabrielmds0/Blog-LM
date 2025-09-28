@@ -1,7 +1,7 @@
 import React from 'react';
 import FeaturedPostCard from './FeaturedPostCard';
 import CombinedTopicsSection from './CombinedTopicsSection';
-import ProceduresGrid from './ProceduresGrid';
+import ProceduresVideoSection from './ProceduresVideoSection';
 import TextBlock from './TextBlock';
 import NewsletterBadge from './NewsletterBadge';
 import MostClicked from './MostClicked';
@@ -24,19 +24,18 @@ const MainLayout = () => {
                 readTime="Em 1 minuto"
               />
             </section>
-             {/* Seção horizontal compartilhada - Grandes Temas + Tópicos A-Z */}
-        <CombinedTopicsSection />
-
-            {/* Grid de procedimentos */}
-            <section>
-              <ProceduresGrid />
-            </section>
 
             
           </div>
 
+         
         </div>
 
+        {/* Seção horizontal compartilhada - Grandes Temas + Tópicos A-Z */}
+        <CombinedTopicsSection />
+
+        {/* Seção de Procedimentos em Vídeo */}
+        <ProceduresVideoSection />
       </main>
     </div>
   );

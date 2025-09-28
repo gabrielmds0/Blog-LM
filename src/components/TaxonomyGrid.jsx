@@ -38,12 +38,7 @@ const TaxonomyGrid = () => {
         ))}
       </div>
       
-      <div className="mt-6 text-center">
-        <button className="text-red-600 hover:text-red-700 font-medium text-sm flex items-center gap-1 mx-auto">
-          Ver todos os tópicos
-          <ArrowRight className="w-4 h-4" />
-        </button>
-      </div>
+      
     </div>
   );
 };
