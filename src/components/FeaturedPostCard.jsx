@@ -28,7 +28,7 @@ const FeaturedPostCard = () => {
         <article className="main-card">
           <div className="main-card-image">
             <img 
-              src="https://via.placeholder.com/600x300/4a90e2/ffffff?text=Imagem+de+Destaque" 
+              src="https://via.placeholder.com/600x350/4a90e2/ffffff?text=Imagem+de+Destaque" 
               alt="Imagem de destaque"
             />
           </div>
@@ -61,7 +61,7 @@ const FeaturedPostCard = () => {
         <article className="red-card">
           <div className="red-card-image-container">
             <img 
-              src="https://via.placeholder.com/300x200/333333/ffffff?text=Imagem+médica" 
+              src="https://via.placeholder.com/400x280/e74c3c/ffffff?text=Imagem+Médica" 
               alt="Imagem médica"
             />
             <div className="trending-badge">EM ALTA</div>
@@ -78,7 +78,7 @@ const FeaturedPostCard = () => {
           <div className="orange-card-content">
             <div className="phone-image">
               <img 
-                src="https://via.placeholder.com/120x200/25d366/ffffff?text=Print+do+WhatsApp" 
+                src="https://via.placeholder.com/110x170/34495e/ffffff?text=Print+do+WhatsApp" 
                 alt="Print do WhatsApp"
               />
             </div>

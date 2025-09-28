@@ -10,31 +10,14 @@ import PromoBlock from './PromoBlock';
 const MainLayout = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <main className="container mx-auto px-4 py-8">
-        {/* Grid principal baseado no mockup */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          
-          {/* Coluna esquerda - Conteúdo principal */}
-          <div className="lg:col-span-8 space-y-6">
-            
-            {/* Card de destaque principal */}
-            <section>
-              <FeaturedPostCard 
-                title="Abordagem completa do derrame pleural"
-                readTime="Em 1 minuto"
-              />
-            </section>
-
-            
-          </div>
-
-         
-        </div>
-
-        {/* Seção horizontal compartilhada - Grandes Temas + Tópicos A-Z */}
+      <main className="py-8">
+        
+        {/* Seção principal - FeaturedPostCard com layout próprio */}
+        <section className="mb-8">
+          <FeaturedPostCard />
+        </section>
+        {/* Seções de largura completa */}
         <CombinedTopicsSection />
-
-        {/* Seção de Procedimentos em Vídeo */}
         <ProceduresVideoSection />
       </main>
     </div>
